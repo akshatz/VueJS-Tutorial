@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <div id="app">{{message}}</div>
+    <style>
+        .active{
+            color:#00ff00;
+        }
+        .notactive{
+            color:#ff0000;
+        }
+
+    </style>
+    <div id="app">
+    <h1 class="static" :class="{active: isActive, 'notactive':null}">{{message}}</h1>    
+    <h1 :class="[isActive ? 'active': 'notactive']">{{message}}</h1>
+    </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
     new Vue({
         el:'#app',
         data :{
-            'message':"Hello"
+            isActive:true,
+            hasError: true,
+            message:"Hello Akshat"
         }
     })
 </script>
