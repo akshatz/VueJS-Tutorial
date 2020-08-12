@@ -3,7 +3,7 @@
         <table class="table table-striped mt-4">
         <thead>
             <tr>
-                <th scope="col">userID</th>
+                <th scope="col">User ID</th>
                 <th scope="col">ID</th>
                 <th scope="col">Title</th>
                 <th scope="col">Body</th>
@@ -14,8 +14,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="post in posts" v-bind:key="posts.Id">
-                <th scope="row">{{post.userID}}</th>
+            <tr v-for="post in posts" :key="id">
+                <td>{{post.userId}}</td>
                 <td>{{post.id}}</td>
                 <td>{{post.title}}</td>
                 <td>{{post.body}}</td>
@@ -31,20 +31,16 @@
         name: 'PostsExample',
         data(){
             return {
-                posts:[]
+                posts:[],
             }
         },
         created(){
+        console.log("Hi")
         axios.get('http://jsonplaceholder.typicode.com/posts').then(posts=>(
 
             this.posts =posts.data
         
-        ))
-
+        ));
         }
     }
 </script>
-
-<style>
-
-</style>
