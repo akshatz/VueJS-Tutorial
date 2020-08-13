@@ -9,23 +9,13 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-
-    <div class="container">
-
-   
+    <div class="container">  
        <div id="app">
-
-
            <form action="">
-
-               <div class="col-sm-6">
+                <div class="col-sm-6">
                     <input v-model="options" type="text" class="form-control">
-               </div>
-
-
-
-               <fieldset class="form-group">
+                </div>
+                <fieldset class="form-group">
                    <legend>Radio buttons</legend>
                    <div class="form-check">
                        <label class="form-check-label">
@@ -45,38 +35,20 @@
                            Option three is disabled
                        </label>
                    </div>
-               </fieldset>
-               <p> You selected {{options.join(', ')}} </p>
-
-           </form>
-
-
-       </div>
-
+                </fieldset>
+                <p> You selected {{options.join(', ')}} </p>
+            </form>
+        </div>
     </div>
-
-   
-   
- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
- 
- 
- 
- <script>
-     
-     let vm = new Vue({
-         
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>  
+  <script>
+    let vm = new Vue({
          el: '#app',
          data: {
              options: [],
              message: ''
-
          }
-           
-     })
-    
+    })
 </script>
-
-
-
 </body>
 </html>
