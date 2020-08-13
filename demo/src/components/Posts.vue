@@ -35,8 +35,8 @@
             }
         },
         created(){
-        console.log("Hi")
-        axios.get('http://jsonplaceholder.typicode.com/posts').then(posts=>(
+            
+            axios.get('http://jsonplaceholder.typicode.com/posts').then(posts=>(
 
             this.posts =posts.data
         
