@@ -26,8 +26,10 @@ const routes = [
 
 ];
 Vue.config.productionTip = false
-const router = new VueRouter({routes: routes})
-
+const router = new VueRouter({
+  routes: routes,
+  mode :'history'
+})
 
 /* eslint-disable no-new */
 new Vue({
