@@ -1,10 +1,6 @@
 <template>
 
-    <div>
-    
-        <p>CONTACT WORKS</p>
-        
-    </div>
+    <div class="container">Contact Number</div>
 
 </template>
 <script>
@@ -12,6 +8,8 @@
 </script>  
 
 <style>
-
+.container{
+    margin:1px;
+}
 </style>
 

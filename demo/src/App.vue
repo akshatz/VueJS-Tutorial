@@ -1,6 +1,5 @@
 <template>
   <div id="demo">
-    <!-- <HelloWorld/> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <router-link class="nav-link" :to="'/'">Logo</router-link>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,4 +46,11 @@ export default {
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+#app{
+  font-family: 'Avenir', Arial, Helvetica, sans-serif;
+  --webkit-font-smoothing:antialiased;
+  -moz-osx-font-smooting: grayscale;
+  text-align: center;
+  color:green;
+}
 </style>

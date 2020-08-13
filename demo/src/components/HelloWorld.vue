@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
@@ -79,6 +80,7 @@
         </a>
       </li>
     </ul>
+  </div>
   </div>
 </template>
 
