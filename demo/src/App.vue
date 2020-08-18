@@ -10,10 +10,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{ 'show': show }">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <router-link class="nav-link":to="'/home'">Home</router-link>
+                    <router-link class="nav-link" :to="'/home'">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link":to="'/contact'">Contact Us</router-link>
+                    <router-link class="nav-link" :to="'/contact'">Contact Us</router-link>
                 </li>
             </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -35,11 +35,6 @@ import Vue from 'vue'
 Vue.component('navBar', {
   template: '#app',
   msg: HelloWorld,
-  data() {
-    return {
-      show: true,
-    }
-  },
   methods: {
     toggleNavbar() {
       this.show = !this.show
