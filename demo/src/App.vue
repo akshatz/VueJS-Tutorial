@@ -1,7 +1,9 @@
 <template id="navBar">
 <div id="app">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" v-bind:class=" { 'navbarOpen': show }"  style="color:blue">
-        <a class="navbar-brand" href="/">Logo</a>
+        <li class="navbar-brand" href="/">
+          <router-link class="nav-link" :to="'/'">Logo</router-link>
+        </li>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" @click.stop="toggleNavbar()">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -61,4 +63,5 @@ new Vue({
   text-align: center;
   color:green;
 }
+
 </style>
